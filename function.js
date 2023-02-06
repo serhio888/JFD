@@ -36,4 +36,18 @@ function getSumOfNumbers(number, type="odd"){
     return sum
 }
 
+//#3
+function getDivisorsCount(number){
+    let divisors = 0
+    if(typeof number != "number") return NaN
+    if(!Number.isInteger(number) || number < 0) {
+        return alert("number должен быть целым числом и больше нуля!")
+    }
+    for(let i = 0; i<=number; i++){
+        number%i === 0 ? divisors++ : null
+    }
+    return divisors
+}
 
+
+ 
