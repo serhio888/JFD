@@ -37,3 +37,17 @@ function giveTalonsInOrder(pArr,oArr){
 } 
 const result = giveTalonsInOrder(people, ordersArr);
 console.log('result', result);
+
+//#3
+function handleObject(obj,key,action){
+	if(action === 'get') return obj[`${key}`]
+	if(action === 'add'){
+		obj[`${key}`] = ''
+		return obj
+	}
+	if(action === 'delete') {
+		delete obj[`${key}`]
+		return obj
+	}
+	return obj
+}
