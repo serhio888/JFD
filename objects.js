@@ -51,3 +51,11 @@ function handleObject(obj,key,action){
 	}
 	return obj
 }
+//#4
+function giveJobToStudent(student,jobName){
+	return {
+		...student,
+		job:jobName
+	}
+}
+
