@@ -59,3 +59,9 @@ function giveJobToStudent(student,jobName){
 	}
 }
 
+//#5
+function sum(...arguments) {
+	return arguments.reduce((a,i)=>a+i,0)
+  }
+
+  
