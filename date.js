@@ -35,4 +35,10 @@ function getDaysBeforeBirthday(dateBirthday){
 }
 console.log(getDaysBeforeBirthday(new Date(2023,11,13)))
 
+//#3
+function addDays(date,days){
+    const newDate = date.getTime()+days*24*60*60*1000
+    return new Date(newDate)
+}
 
+console.log(addDays(new Date(),5))
