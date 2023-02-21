@@ -83,10 +83,9 @@ class Dictionary {
         return this.words[word]
     }
     showAllWords(){
-        const wd = Object.entries(this.words).map((el)=>{
-            return el[1]['word'] + '-' + el[1]['description']
-        })
-       return console.log(wd.join(', '))
+       for(const word in this.words){
+        console.log(this.words[word]['word']+'-'+ this.words[word]['description'])
+       }       
     }
 }
 
@@ -122,7 +121,7 @@ hardWordsDictionary.add('неологизм', 'Новое слово или вы
 hardWordsDictionary.add('квант', 'Неделимая часть какой-либо величины в физике.');  
 hardWordsDictionary.remove('неологизм');   
 hardWordsDictionary.showAllWords();
-console.log(hardWordsDictionary)
+console.log('hardWordsDictionary;',hardWordsDictionary)
 
 //#5
 
@@ -179,11 +178,11 @@ const juniorDeveloper = new JuniorDeveloper('Анастасия', 20);
 const middleDeveloper = new MiddleDeveloper('Игорь', 25);
 const seniorDeveloper = new SeniorDeveloper('Максим', 30);
 
-juniorDeveloper.code();
-middleDeveloper.code(); 
-seniorDeveloper.code();
+//juniorDeveloper.code();
+//middleDeveloper.code(); 
+//seniorDeveloper.code();
 
 seniorDeveloper.learnNewTechnologies('Docker');
-console.log(juniorDeveloper.fullName, juniorDeveloper.age, juniorDeveloper.position, juniorDeveloper.technologies); 
-console.log(middleDeveloper.fullName, middleDeveloper.age, middleDeveloper.position, middleDeveloper.technologies);
-console.log(seniorDeveloper.fullName, seniorDeveloper.age, seniorDeveloper.position, seniorDeveloper.technologies); 
+//console.log(juniorDeveloper.fullName, juniorDeveloper.age, juniorDeveloper.position, juniorDeveloper.technologies); 
+//console.log(middleDeveloper.fullName, middleDeveloper.age, middleDeveloper.position, middleDeveloper.technologies);
+//console.log(seniorDeveloper.fullName, seniorDeveloper.age, seniorDeveloper.position, seniorDeveloper.technologies); 
